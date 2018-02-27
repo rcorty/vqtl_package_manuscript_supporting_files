@@ -1,4 +1,5 @@
-library(tidyr); library(dplyr); library(qtl); library(vqtl);
+library(qtl)
+library(vqtl)
 
 set.seed(27599)
 

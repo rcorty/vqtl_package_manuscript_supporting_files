@@ -25,10 +25,11 @@ sov_p4x <- scanonevar(cross = test_cross,
 											mean.formula = phenotype4x ~ sex + mean.QTL.add + mean.QTL.dom,
 											var.formula = ~sex + var.QTL.add + var.QTL.dom)
 
-saveRDS(object = list(so_p1x, sov_p1x,
-											so_p2x, sov_p2x,
-											so_p3x, sov_p3x,
-											so_p4x, sov_p4x),
+
+saveRDS(object = list(so_p1x = so_p1x, sov_p1x = sov_p1x,
+											so_p2x = so_p2x, sov_p2x = sov_p2x,
+											so_p3x = so_p3x, sov_p3x = sov_p3x,
+											so_p3x = so_p4x, sov_p4x = sov_p4x),
 				file = 'saves/LOD_scans_appendix.RDS')
 
 

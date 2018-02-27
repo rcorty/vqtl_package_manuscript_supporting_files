@@ -25,10 +25,10 @@ sov_p4 <- scanonevar(cross = test_cross,
 										 mean.formula = phenotype4 ~ sex + mean.QTL.add + mean.QTL.dom,
 										 var.formula = ~sex + var.QTL.add + var.QTL.dom)
 
-saveRDS(object = list(so_p1, sov_p1,
-											so_p2, sov_p2,
-											so_p3, sov_p3,
-											so_p4, sov_p4),
+saveRDS(object = list(so_p1 = so_p1, sov_p1 = sov_p1,
+											so_p2 = so_p2, sov_p2 = sov_p2,
+											so_p3 = so_p3, sov_p3 = sov_p3,
+											so_p3 = so_p4, sov_p4 = sov_p4),
 				file = 'saves/LOD_scans.RDS')
 
 
